@@ -35,7 +35,7 @@ jobs:
     steps:
       - checkout
 
-    - run: ./gradlew :app:assemble :app:bundleProductionRelease --no-daemon
+      - run: ./gradlew :app:assemble :app:bundleProductionRelease --no-daemon
 
   unit test:
     <<: *job_config
@@ -68,8 +68,8 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Build Dev and Test APKs
-        command: scripts/apks_for_testing.sh
+          name: Build Dev and Test APKs
+          command: scripts/apks_for_testing.sh
 
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   build-and-test:
