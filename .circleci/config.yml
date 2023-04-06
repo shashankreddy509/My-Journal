@@ -37,7 +37,7 @@ jobs:
 
       - run:
           name: Assemble release build
-          command: ./gradlew assembleRelease --no-daemon
+          command: ./gradlew assembleRelease
 
   unit test:
     <<: *job_config
