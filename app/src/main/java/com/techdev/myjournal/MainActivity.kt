@@ -1,6 +1,5 @@
 package com.techdev.myjournal
 
-import android.graphics.drawable.Drawable
 import android.os.Bundle
 import android.view.View
 import android.view.ViewGroup
@@ -13,7 +12,6 @@ import com.onegravity.rteditor.api.RTApi
 import com.onegravity.rteditor.api.RTMediaFactoryImpl
 import com.onegravity.rteditor.api.RTProxyImpl
 import com.techdev.myjournal.utils.Utils.PARAM_MESSAGE
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -30,7 +28,6 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(R.layout.activity_main)
 
-
         // register toolbar
         val toolbarContainer = findViewById<View>(R.id.rte_toolbar_container) as ViewGroup
         val rtToolbar = findViewById<View>(R.id.rte_toolbar) as RTToolbar
@@ -42,9 +39,7 @@ class MainActivity : AppCompatActivity() {
         rtEditText.setRichTextEditing(true, "")
 
         findViewById<Button>(R.id.btnNextActivity).setOnClickListener {
-
         }
-
     }
 
     override fun onDestroy() {

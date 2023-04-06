@@ -25,7 +25,7 @@ jobs:
       - checkout
       - run:
           name: Perform code style check
-          command: ./gradlew ktlintFormat
+          command: ./gradlew ktlintcheck
 
 
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
