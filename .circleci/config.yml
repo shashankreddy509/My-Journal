@@ -71,7 +71,8 @@ jobs:
       - checkout
       - run:
           name: Build Dev and Test APKs
-          command: scripts/apks_for_testing.sh
+          command:
+            ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest -PisTestCoverageEnabled --stacktrace
 
   # Below is the definition of your job to build and test your app, you can rename and customize it as you want.
   build-and-test:
