@@ -35,7 +35,9 @@ jobs:
     steps:
       - checkout
 
-      - run: ./gradlew :app:assemble :app:bundleProductionRelease --no-daemon
+      - run:
+          name: Assemble release build
+          command: ./gradlew assembleRelease --no-daemon
 
   unit test:
     <<: *job_config
