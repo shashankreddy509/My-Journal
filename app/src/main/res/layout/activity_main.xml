@@ -7,7 +7,6 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-
     <com.onegravity.rteditor.RTEditText
         android:id="@+id/rteMain"
         android:layout_width="match_parent"
@@ -24,7 +23,10 @@
 
     <include android:id="@+id/rte_toolbar_container"
         layout="@layout/toolbar_rte"
-        app:layout_constraintTop_toBottomOf="@+id/rteMain"/>
+        android:layout_gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/rteMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btnNextActivity"
