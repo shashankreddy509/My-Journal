@@ -36,7 +36,6 @@ class MainActivity : AppCompatActivity() {
         rtEditText = findViewById<View>(R.id.rteMain) as RTEditText
         rtManager.registerEditor(rtEditText, true)
         rtEditText.setRichTextEditing(true, "")
-
     }
 
     override fun onDestroy() {
